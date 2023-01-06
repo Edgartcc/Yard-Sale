@@ -87,6 +87,28 @@ productList.push({
     price: 450,
     image: 'https://images.pexels.com/photos/139038/pexels-photo-139038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 });
+productList.push({
+    name: 'Guitar',
+    price: 950,
+    image: 'https://images.pexels.com/photos/8044221/pexels-photo-8044221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
+productList.push({
+    name: 'pc',
+    price: 1200,
+    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
+productList.push({
+    name: 'SmartPhone',
+    price: 1200,
+    image: 'https://images.pexels.com/photos/1024864/pexels-photo-1024864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
+productList.push({
+    name: 'Taximoto',
+    price: 2000,
+    image: 'https://images.pexels.com/photos/13156173/pexels-photo-13156173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
+
+
 
 /*
 <div class="product-card">
