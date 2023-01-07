@@ -124,6 +124,31 @@ productList.push({
     price: 2000,
     image: 'https://images.pexels.com/photos/13156173/pexels-photo-13156173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 });
+productList.push({
+    name: 'CardSale',
+    price: 2000,
+    image: 'https://images.pexels.com/photos/5614119/pexels-photo-5614119.jpeg?auto=compress&cs=tinysrgb&w=600',
+});
+productList.push({
+    name: 'Zapatos de Davinci',
+    price: 2500,
+    image: 'https://images.pexels.com/photos/5264896/pexels-photo-5264896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
+productList.push({
+    name: 'Ropa de primera',
+    price: 50,
+    image: 'https://images.pexels.com/photos/6347535/pexels-photo-6347535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
+productList.push({
+    name: 'Billetera llena',
+    price: 5,
+    image: 'https://images.pexels.com/photos/4386433/pexels-photo-4386433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
+productList.push({
+    name: 'Silla minimalista',
+    price: 50,
+    image: 'https://images.pexels.com/photos/5486148/pexels-photo-5486148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+});
 
 
 
