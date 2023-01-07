@@ -1,33 +1,50 @@
 const menuEmail = document.querySelector('.navbar-email');
 const menuHamIcon = document.querySelector('.menu');
 const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
+const productDetailCloseIcon = document.querySelector('.product-detail-close')
 const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
+const productDetailContainer = document.querySelector('#productDetail');
 const cardsContainer = document.querySelector('.cards-container');
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
 menuHamIcon.addEventListener('click', toggleMobileMenu);
-menuCarritoIcon.addEventListener('click', toggleCarritoshoppingCartContainer);
+menuCarritoIcon.addEventListener('click', toggleCarritoAside);
+productDetailCloseIcon.addEventListener('click', closeProductDetailAside)
 
 /*lo que esta comentado es una manera de hacerlo, lo que esta sin comentar es una manera mas sencilla*/  
 
 function toggleDesktopMenu() {
     shoppingCartContainer.classList.add('inactive');
+    productDetailContainer.classList.add('inactive')
     desktopMenu.classList.toggle('inactive');
 }
 
 function toggleMobileMenu() {
     shoppingCartContainer.classList.add('inactive');
+    productDetailContainer.classList.add('inactive')
     mobileMenu.classList.toggle('inactive');
 }
 
-function toggleCarritoshoppingCartContainer() {
+function toggleCarritoAside() {
     desktopMenu.classList.add('inactive');
     mobileMenu.classList.add('inactive');
+    productDetailContainer.classList.add('inactive')
     shoppingCartContainer.classList.toggle('inactive');
 
     
+}
+
+function openProductDetailAside() {
+    desktopMenu.classList.add('inactive');
+    mobileMenu.classList.add('inactive');
+    shoppingCartContainer.classList.add('inactive');
+    productDetailContainer.classList.remove('inactive')
+}
+
+function closeProductDetailAside() {
+    productDetailContainer.classList.add('inactive')
 }
 
 /*function toggleDesktopMenu() {
@@ -133,6 +150,7 @@ function renderProducts(arr) {
         // product = {name, price, image} -> product.image
         const productImg = document.createElement('img');
         productImg.setAttribute('src', product.image);
+        productImg.addEventListener('click', openProductDetailAside)
     
         const productInfo = document.createElement('div');
         productInfo.classList.add('product-info');
